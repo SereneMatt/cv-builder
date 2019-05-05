@@ -1,0 +1,52 @@
+<%= form_with scope: :resume, url: resumes_path, local: true do |form| %>
+  <% if @resume.errors.any? %>
+    <div id="error_explanation" class="field_with_errors">
+      <h2>
+        <%= pluralize(@resume.errors.count, "error") %>
+        prohibited this CV from being created
+      </h2>
+      <ul>
+        <% @resume.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table>
+    <tr>
+      <td><%= form.label :your_name %></td>
+    </tr>
+    <tr>
+      <td><%= form.text_field :name %></td>
+    </tr>
+    <tr>
+      <td><%= form.label :what_are_you? %></td>
+    </tr>
+    <tr>
+      <td><%= form.text_field :role %></td>
+    </tr>
+    <tr>
+      <td><%= form.label :contact_number %></td>
+    </tr>
+    <tr>
+      <td><%= form.text_field :contact_number %></td>
+    </tr>
+      <tr>
+      <td><%= form.label :email_address %></td>
+    </tr>
+    <tr>
+      <td><%= form.text_field :email %></td>
+    </tr>
+    <tr>
+      <td><%= form.label :describe_yourself %></td>
+    </tr>
+    <tr>
+      <td><%= form.text_area :about %></td>
+    </tr>
+    <tr>
+      <td><%= form.submit %></td>
+    </tr>
+  </table>
+<% end %>
+
+<%= link_to 'Home', home_index_path %>

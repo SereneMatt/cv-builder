@@ -1,0 +1,35 @@
+<h1>Edit CV</h1>
+ 
+<%= form_with(model: @resume, local: true) do |form| %>
+ 
+  <% if @resume.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@resume.errors.count, "error") %> prohibited
+        this CV from being saved:
+      </h2>
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :your_name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :what_are_you? %><br>
+    <%= form.text_field :role %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Cancel', resumes_path %>

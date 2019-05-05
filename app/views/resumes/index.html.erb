@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>Created On</th>
+    <th>Role</th>
+  </tr>
+  <% @resumes.each do |resume| %>
+    <tr>
+      <td><%= resume.created_at %></td>
+      <td><%= resume.role %></td>
+      <td><%= link_to 'View', resume_path(resume) %></td>
+    </tr>
+  <% end %>
+</table>
