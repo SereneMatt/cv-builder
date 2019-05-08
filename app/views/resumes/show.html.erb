@@ -7,5 +7,10 @@
   <strong>Role:</strong>
   <%= @resume.role %>
 </p>
-
+<% if @resume.image.attached? %>
+  <p>
+    <strong>Photo:</strong>
+    <%= image_tag @resume.banner %>
+  </p>
+<% end %>
 <%= link_to 'List of CVs', resumes_path %>
