@@ -2,12 +2,18 @@
   <tr>
     <th>Created On</th>
     <th>Role</th>
+    <th>Photo</th>
   </tr>
   <% @resumes.each do |resume| %>
     <tr>
       <td><%= resume.created_at %></td>
       <td><%= resume.role %></td>
       <td><%= link_to 'View', resume_path(resume) %></td>
+      <td>
+        <% if resume.image.attached? %>
+          <%= image_tag resume.thumbnail %>
+        <% end %>
+      </td>
     </tr>
   <% end %>
 </table>

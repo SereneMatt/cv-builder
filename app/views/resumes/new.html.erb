@@ -44,6 +44,14 @@
       <td><%= form.text_area :about %></td>
     </tr>
     <tr>
+      <td>
+        <div class="field">
+          <%= form.label :image %>
+          <%= form.file_field :image %>
+        </div>
+      </td>
+    </tr>
+    <tr>
       <td><%= form.submit %></td>
     </tr>
   </table>
