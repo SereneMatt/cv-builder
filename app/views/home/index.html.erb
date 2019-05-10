@@ -1,2 +1,7 @@
-<h1>Hello, Serene!</h1>
-<%= link_to 'Start building your CV...', new_resume_path %>
+<h1>Hi there! Start building your CV...</h1>
+<% if current_user %>
+  <%= link_to 'Log Out', logout_path %>
+<% else %>
+  <%= link_to 'Sign Up', new_user_path %>
+  <%= link_to 'Log In', login_path %>
+<% end %>

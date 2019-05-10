@@ -7,10 +7,10 @@ class ResumeTest < ActiveSupport::TestCase
 
   test "resume with name should be valid" do
     @resume.name = 'test'
-    assert resume.valid?
+    assert @resume.valid?
   end
 
   test 'resume without name should not be valid' do
-    refute resume.valid?
+    refute @resume.valid?
   end
 end
