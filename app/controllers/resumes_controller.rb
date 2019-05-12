@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ResumesController < ApplicationController
   def index
     @resumes = Resume.all
@@ -34,7 +36,8 @@ class ResumesController < ApplicationController
   end
 
   private
-    def resume_params
-      params.require(:resume).permit(:name, :role, :contact_number, :email, :about, :image)
-    end
+
+  def resume_params
+    params.require(:resume).permit(:name, :role, :contact_number, :email, :about, :image)
+  end
 end

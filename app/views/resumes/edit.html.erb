@@ -1,7 +1,7 @@
 <h1>Edit CV</h1>
- 
+
 <%= form_with(model: @resume, local: true) do |form| %>
- 
+
   <% if @resume.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -15,21 +15,21 @@
       </ul>
     </div>
   <% end %>
- 
+
   <p>
     <%= form.label :your_name %><br>
     <%= form.text_field :name %>
   </p>
- 
+
   <p>
     <%= form.label :what_are_you? %><br>
     <%= form.text_field :role %>
   </p>
- 
+
   <p>
     <%= form.submit %>
   </p>
- 
+
 <% end %>
- 
+
 <%= link_to 'Cancel', resumes_path %>
