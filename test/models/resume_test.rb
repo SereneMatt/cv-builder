@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class ResumeTest < ActiveSupport::TestCase
@@ -5,7 +7,7 @@ class ResumeTest < ActiveSupport::TestCase
     @resume = Resume.new
   end
 
-  test "resume with name should be valid" do
+  test 'resume with name should be valid' do
     @resume.name = 'test'
     assert @resume.valid?
   end
