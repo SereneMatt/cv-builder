@@ -42,6 +42,8 @@ gem 'dotenv-rails'
 # Integrates bootstrap
 gem 'bootstrap'
 gem 'jquery-rails'
+# Configures app in Heroku
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
