@@ -1,0 +1,14 @@
+
+$color-layout-bg: #32CD32;
+$color-bg-white: #fff;
+
+body {
+  background-color: $color-layout-bg !important;
+}
+
+.div-container {
+  margin: auto;
+  margin-top: 5%;
+  padding: 5%;
+  width: 80%;
+}
