@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 2019_05_10_033859) do
   create_table "resumes", force: :cascade do |t|
     t.string "name"
     t.string "role"
+    t.string "location"
+    t.string "country"
     t.integer "contact_number"
     t.string "email"
     t.text "about"
