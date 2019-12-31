@@ -1,8 +1,2 @@
-require: rubocop-performance
-
-Metrics/LineLength:
-  Max: 150
-
-AllCops:
-  Excludes:
-    - 'db/migrate/*.rb'
+inherit_from:
+  - https://github.com/SereneMatt/rubypolice/rubocop.yml
