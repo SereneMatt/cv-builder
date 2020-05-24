@@ -36,12 +36,12 @@ gem 'mini_magick', '~> 4.9'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Stores values in env
 gem 'dotenv-rails'
-# Integrates bootstrap
-gem 'bootstrap'
-gem 'jquery-rails'
 
 # For font icons
 gem 'font-awesome-rails'
+
+# For javascript
+gem 'webpacker', '~> 3.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
