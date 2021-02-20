@@ -4,6 +4,10 @@
 
 $color-error: red;
 
+.bg_white {
+  background-color: white;
+}
+
 .field_with_errors {
   color: $color-error;
 }
