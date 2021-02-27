@@ -11,3 +11,22 @@ $color-error: red;
 .field_with_errors {
   color: $color-error;
 }
+
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px;
+  
+/*   First thing to do to get a flex box */
+  display: flex;
+}
+
+.item {
+  padding: 30px;
+  margin: 30px;
+}
