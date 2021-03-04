@@ -19,15 +19,21 @@ $color-error: red;
   box-sizing: border-box;
 }
 
+.div-container {
+  margin: auto;
+  margin-top: 5%;
+  padding: 5%;
+  width: 80%;
+}
+
 .container {
-  padding: 10px;
-  
 /*   First thing to do to get a flex box */
   display: flex;
+  justify-content: space-between;
 }
 
 .item {
-  padding: 30px;
+  padding: 10px;
   margin: 30px;
 }
 
