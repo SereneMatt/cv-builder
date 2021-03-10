@@ -32,9 +32,15 @@ $color-error: red;
   justify-content: space-between;
 }
 
-.item {
-  padding: 10px;
-  margin: 30px;
+.main-container {
+/*   First thing to do to get a flex box */
+  display: flex;
+  padding-top: 2rem;
+}
+
+.item-details {
+  width: 80%;
+  margin-right: 4rem;
 }
 
 .highlight {
